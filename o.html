@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARNAUD ULRICH DJOLLO AGUI - Développeur d'Applications</title>
+    <link rel="stylesheet" href="porto.css">
+    <script src="porto.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700;900&family=Roboto&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Djollo-folio</div>
+            <button class="burger" aria-label="Menu">
+                <i class="fas fa-bars "></i>
+            </button>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('hero')">Accueil</a></li>
+                <li><a onclick="scrollToSection('about')">À Propos</a></li>
+                <li><a onclick="scrollToSection('skills')">Compétences</a></li>
+                <li><a onclick="scrollToSection('experience')">Expérience</a></li>
+                <li><a onclick="scrollToSection('education')">Formation</a></li>
+            </ul>
+            <div class="contact-info">
+                <a href="#" title="Facebook" style="color: white; margin-right: 10px;"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter" style="color: white; margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                <a href="" title="LinkedIn" style="color: white; margin-right: 10px;"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="" title="GitHub" style="color: white;"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1 id="animated-name">
+                        <span id="line1"></span><br>
+                        <span id="line2" style="color: #00d4ff;"></span>
+                    </h1>
+                    <div class="subtitle" id="animated-subtitle"></div>
+                    <div class="status" id="animated-status"></div>
+                    <div class="hero-buttons">
+                        <a href="CV.pdf" class="btn primary">Télécharger CV</a>
+                        <a href="#" class="btn" onclick="scrollToSection('experience')">Mes Projets</a>
+                        <a href="mailto:arnaudagui89@gmail.com" class="btn">Me Contacter</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="tel:+22507875978776" title="Téléphone"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:arnaudagui89@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="hero-workspace fade-in">
+                    <div class="workspace-screen">
+                        <i class="fas fa-laptop-code"></i> Développement Web & Mobile<br>
+                        <small>HTML • CSS • JavaScript • PHP • Python</small>
+                    </div>
+                    <div class="code-snippet">
+                        function développerApp() {<br>
+                        &nbsp;&nbsp;return "Passion + Code = Innovation";<br>
+                        }
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+
+                </div>
+                <div class="about-text">
+                    <h2>À PROPOS</h2>
+                    <p>
+                        Je suis <strong> Arnaud </strong>, un étudiant passionné par le développement d'applications et
+                        les technologies de l'information. Actuellement en formation à <strong> AGITEL FORMATION</strong>, je me spécialise dans la création de solutions logicielles innovantes et
+                            performantes.
+                    </p>
+                    <p>
+                        Ma formation me permet de maîtriser les technologies frontend et backend, la gestion des bases
+                        de données ainsi que les méthodes de développement modernes. Motivé, autonome et sérieux, je
+                        suis prêt à m’investir pleinement dans les missions qui me seront confiées.s
+                    </p>
+                    <div class="contact-details">
+                        <div><strong><i class="fas fa-envelope"></i> Email :</strong> arnaudagui89@gmail.com</div>
+                        <div><strong><i class="fas fa-phone"></i> Téléphone :</strong> +225 07-87-59-78-76</div>
+                        <div><strong><i class="fas fa-map-marker-alt"></i> Adresse :</strong> ABOBO ABIDJAN</div>
+                        <div><strong><i class="fas fa-bullseye"></i> Statut :</strong> Étudiant en Informatique</div>
+                        <div><strong><i class="fas fa-building"></i> Formation :</strong> AGITEL - BTS IDA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>COMPÉTENCES</h2>
+                <p>Mes domaines d'expertise techniques et personnelles</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>DÉVELOPPEMENT FRONTEND</h3>
+                    <div class="skill-item">
+                        <span>HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Visual Basics</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>DÉVELOPPEMENT BACKEND</h3>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Django</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL Server</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Oracle</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>OUTILS & BUREAUTIQUE</h3>
+                    <div class="skill-item">
+                        <span>Microsoft Word</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Excel</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PowerPoint</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>LANGUES</h3>
+                    <div class="skill-item">
+                        <span>Français</span>
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Anglais</span>
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>QUALITÉS PERSONNELLES</h3>
+                    <div class="traits-list">
+                        <div class="trait-tag">Créatif</div>
+                        <div class="trait-tag">Passionné</div>
+                        <div class="trait-tag">Rigoureux</div>
+                        <div class="trait-tag">Impliqué</div>
+                        <div class="trait-tag">Respectueux</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Administration de Système</h3>
+                    <div class="skill-item">
+                        <span>Linux</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Windows Server</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Merise</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>UML</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>EXPÉRIENCE</h2>
+                <p>Mes projets académiques et professionnels</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Agent de Kit de Biométrie - Recensement Électoral</h3>
+                    <div class="company">Commission Electorale Indépendante (CEI)</div>
+                    <div class="date">19 octobre 2024 - 11 novembre 2024</div>
+                    <ul>
+                        <li>Gestion des équipements biométriques pour l'enregistrement des électeurs</li>
+                        <li>Assistance technique et support aux citoyens</li>
+                        <li>Respect des procédures et protocoles électoraux</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Développement d'un Site Web Dynamique</h3>
+                    <div class="company">Projet Académique - Cours de Développement Web</div>
+                    <div class="date">Projet réalisé dans le cadre de la formation</div>
+                    <ul>
+                        <li>Création d'un site web dynamique pour une boutique en ligne</li>
+                        <li>Utilisation de HTML, CSS, JavaScript et PHP</li>
+                        <li>Mise en place d'une base de données MySQL pour la gestion des utilisateurs et des produits
+                        </li>
+                        <li>Interface responsive et moderne</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Gestion de Base de Données pour une Application</h3>
+                    <div class="company">Projet Académique - Cours de Base de Données</div>
+                    <div class="date">Projet réalisé dans le cadre de la formation</div>
+                    <ul>
+                        <li>Conception et implémentation d'une base de données relationnelle</li>
+                        <li>Application de gestion des étudiants</li>
+                        <li>Utilisation de SQL pour la gestion des données</li>
+                        <li>Optimisation des requêtes et performance</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Modélisation et Conception d'un Système d'Information</h3>
+                    <div class="company">Projet Académique - Cours de Merise et UML</div>
+                    <div class="date">Projet réalisé dans le cadre de la formation</div>
+                    <ul>
+                        <li>Analyse des besoins des prestataires de services et des clients</li>
+                        <li>Conception d'un système d'information utilisant la méthode Merise</li>
+                        <li>Modélisation UML pour la représentation du système</li>
+                        <li>Documentation technique complète</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-title">
+                <h2>FORMATION</h2>
+                <p>Mon parcours académique et certifications</p>
+            </div>
+            <div class="experience-grid">
+
+                <div class="experience-item">
+                    <h3>BACCALAURÉAT (BAC)</h3>
+                    <div class="company">COLLÈGE KEMA ANGRÉ</div>
+                    <div class="date">2021-2022</div>
+                    <ul>
+                        <li>Diplôme obtenu avec succès</li>
+                        <li>Préparation solide pour les études supérieures</li>
+                        <li>Base académique générale</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>BREVET DE TECHNICIEN SUPÉRIEUR IDA (BTS)</h3>
+                    <div class="company">AGITEL FORMATION</div>
+                    <div class="date">2022-2024</div>
+                    <ul>
+                        <li>Spécialisation en Informatique et Développement d'Applications</li>
+                        <li>Formation complète en développement web et mobile</li>
+                        <li>Maîtrise des langages de programmation modernes</li>
+                        <li>Gestion de bases de données et systèmes d'information</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>LICENCE PROFESSIONEL EN INFORMATIQUE </h3>
+                    <div class="company">AGITEL FORMATION</div>
+                    <div class="date">2024-2025</div>
+                    <ul>
+                        <li>Formation approfondie en développement d'applications</li>
+                        <li>Projets pratiques et études de cas réels</li>
+                        <li>Préparation à l'entrée dans le monde professionnel</li>
+                        <li>Renforcement des compétences techniques et personnelles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Arnaud Ulrich Djollo Agui. Tous droits réservés.
+    </footer>
+</body>
+
+</html>
